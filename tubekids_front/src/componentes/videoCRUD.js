@@ -8,6 +8,7 @@ const VideoCRUD = () => {
     fetchVideos();
   }, []);
 
+   //Metodo obtenerlos (llamar video)
   const fetchVideos = async () => {
     try {
       const response = await fetch('http://localhost:3001/api/videos');
@@ -22,6 +23,7 @@ const VideoCRUD = () => {
     }
   };
 
+  //Metodo para eliminar datos de video
   const handleDelete = async (videoId) => {
     try {
       const response = await fetch(`http://localhost:3001/api/videos?id=${videoId}`, {
@@ -37,6 +39,7 @@ const VideoCRUD = () => {
     }
   };
 
+   //Metodo para agregar nuevo video
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -58,6 +61,8 @@ const VideoCRUD = () => {
     }
   };
 
+
+  //DATOS
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setNewVideo({ ...newVideo, [name]: value });
