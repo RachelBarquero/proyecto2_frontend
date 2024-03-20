@@ -9,7 +9,7 @@ const Kids = () => {
 
   const fetchChildren = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/api/users?id=${localStorage.getItem("Id")}`);
+      const response = await fetch(`http://localhost:3001/api/kids?id=${localStorage.getItem("Id")}`);
       if (!response.ok) {
         throw new Error('Error fetching children');
       }
@@ -36,7 +36,7 @@ const Kids = () => {
   const handleLogin = async () => {
     console.log(selectedChildId);
     try {
-      const response = await fetch(`http://localhost:3001/api/userLogin?id=${selectedChildId}&pin=${pin}`);
+      const response = await fetch(`http://localhost:3001/api/kidsLogin?id=${selectedChildId}&pin=${pin}`);
       if (!response.ok) {
         throw new Error('Error logging in child');
       }

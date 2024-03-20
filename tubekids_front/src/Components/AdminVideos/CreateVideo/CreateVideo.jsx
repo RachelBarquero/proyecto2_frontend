@@ -35,7 +35,7 @@ const CreateVideo = () => {
       if (!response.ok) {
         throw new Error('Error creating playlist');
       }
-
+      console.log(formData);
       const data = await response.json();
       console.log('Playlist created successfully:', data);
       setError('');
@@ -52,7 +52,7 @@ const CreateVideo = () => {
   };
 
   if (isCreated) {
-    return <Navigate to="/adminPlaylist" />;
+    return <Navigate to="/adminVideos" />;
   }
 
   return (

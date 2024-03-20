@@ -47,7 +47,7 @@ const AdminVideos = () => {
   return (
     <div className="playlist-container">
     <h2 className="playlist-title">Playlist</h2>
-    <Link to="/createNewVideo" className="playlist-button">Create new video</Link>
+    <Link to="/createVideo" className="playlist-button">Create new video</Link>
     {error && <div className="error-message">{error}</div>}
     <ul className="playlist-list">
       {videos.map(video => (
