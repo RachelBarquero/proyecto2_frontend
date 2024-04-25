@@ -13,7 +13,7 @@ const Register = () => {
     lastname: '',
     country: '',
     fechaNacimiento: '',
-    telefono: "+50660609419",
+    telefono: "+50686662222",
     status: 'Inactivo'
   });
   const [loggedIn, setLoggedIn] = useState(false);
