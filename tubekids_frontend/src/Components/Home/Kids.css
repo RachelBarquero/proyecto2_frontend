@@ -1,7 +1,8 @@
+/* Estilos para la lista de elementos hijo */
 .child-list-container {
   display: flex;
   justify-content: center;
-  margin-top: 14%;
+  margin-top: 10%; /* Reducir el margen superior */
 }
 
 .child-container {
@@ -12,45 +13,43 @@
 
 .child-card {
   margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 15px; /* Aumentar el espacio interior */
+  border: 2px solid #ccc; /* Aumentar el grosor del borde */
+  border-radius: 10px; /* Redondear más los bordes */
   background: radial-gradient(circle, #1ea9ff, #c735ff);
-  width: 200px;
+  width: 220px; /* Aumentar el ancho del card */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-
 .child-avatar {
-  width: 100px;
-  height: 100px;
+  width: 120px; /* Aumentar el tamaño del avatar */
+  height: 120px;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .child-details {
   text-align: center;
+  margin-top: 10px; /* Añadir espacio arriba */
 }
 
-
-
 .child-name {
-  font-size: 18px;
+  font-size: 20px; /* Aumentar el tamaño del nombre */
   font-weight: bold;
   margin-bottom: 5px;
-  color: #fffefe;
-  /* Color de texto oscuro */
+  color: #ffffff; /* Cambiar el color del texto a blanco */
 }
 
 .child-age {
-  font-size: 16px;
+  font-size: 18px; /* Aumentar el tamaño de la edad */
   font-weight: bold;
   color: #ffffff;
-  /* Color de texto gris */
 }
+
+/* Estilos para el modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -66,34 +65,40 @@
 .modal-contents {
   background-color: #9fa6eb;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 30px; /* Aumentar el espacio interior */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Aumentar el tamaño y la oscuridad de la sombra */
+  max-width: 80%; /* Limitar el ancho máximo */
 }
 
 .close {
-  background: rgb(8, 8, 109);
-  border: white;
+  background: #08086d; /* Cambiar el color de fondo del botón de cierre */
+  border: none;
   cursor: pointer;
   font-size: 16px;
-  color: #fffbfb;
-  padding: 5px;
+  color: #fff;
+  padding: 10px 20px; /* Aumentar el espacio interior del botón */
   border-radius: 5px;
+}
+
+.close:hover {
+  background: #030329; /* Cambiar el color de fondo al pasar el ratón */
 }
 
 .modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px; /* Añadir espacio inferior */
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px; /* Aumentar el tamaño del título */
   margin-bottom: 20px;
 }
 
 input {
-  width: 30%;
-  padding: 10px;
+  width: 100%; /* Utilizar el ancho completo del contenedor */
+  padding: 12px; /* Aumentar el espacio interior */
   margin-top: 20px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -101,15 +106,15 @@ input {
 }
 
 .login-button {
-  width: 20%;
-  padding: 10px;
+  width: 50%; /* Ajustar el ancho del botón de inicio de sesión */
+  padding: 12px; /* Aumentar el espacio interior */
   background-color: #007bff;
   color: #fff;
-  border: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  margin-left: 60px;
+  font-size: 18px; /* Aumentar el tamaño del texto */
+  margin: 20px auto 0; /* Centrar y ajustar los márgenes */
 }
 
 .login-button:hover {

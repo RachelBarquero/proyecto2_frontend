@@ -12,7 +12,7 @@
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -25,7 +25,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -35,8 +35,8 @@
 
 /* Estilos para los botones */
 .buttonh {
-  margin: 10px 10px 0 0; /* Añade espacio entre los botones */
-  padding: 10px 20px;
+  margin: 10px; /* Añade espacio uniforme alrededor de los botones */
+  padding: 12px 24px;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -44,6 +44,7 @@
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .buttonh:hover {
@@ -52,9 +53,10 @@
 
 /* Estilos para el contenedor principal */
 .container {
-  margin-left: 20px; /* Añade margen izquierdo a partir del borde de la pantalla */
+  max-width: 800px; /* Limita el ancho del contenedor */
+  margin: 20px auto; /* Centra el contenedor horizontalmente */
+  padding: 20px;
 }
-
 
 /* Estilos para los botones de administración */
 .admin-button {
@@ -64,5 +66,3 @@
 .admin-button:hover {
   background-color: #218838;
 }
-
-

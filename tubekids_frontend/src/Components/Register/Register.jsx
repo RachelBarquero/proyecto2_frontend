@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import './Register.css'
 
 const Register = () => {
@@ -102,6 +102,7 @@ const Register = () => {
 
   return (
     <div className="wrappers">
+      <Link to="/login" >Login</Link>
       {error && <div className="error-message">{error}</div>}
       <form className="register-form" onSubmit={handleSubmit}>
         <h2 className="register-title">Create User</h2>

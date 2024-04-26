@@ -1,5 +1,5 @@
 import { useState, useEffect} from 'react';
-import { Navigate} from 'react-router-dom';
+import { Navigate,Link} from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -109,6 +109,7 @@ const Login = () => {
   return (
     <>
     <div className="wrapper">
+    <Link to="/" >Register</Link>
       {error && <div className="error-message">{error}</div>}
       <form onSubmit={handleSubmit}>
         <h1>Sign in </h1>

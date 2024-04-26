@@ -1,7 +1,9 @@
 /* Estilos mejorados para el componente Update */
 .update-title {
-    font-size: 24px;
+    font-size: 28px; /* Aumentar el tamaño del título */
     margin-bottom: 20px;
+    text-align: center; /* Centrar el texto */
+    color: #333; /* Color de texto más oscuro */
 }
 
 .update-form {
@@ -15,31 +17,58 @@
 
 .update-input,
 .update-button {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 20px; /* Aumentar el espacio entre elementos */
+    padding: 12px; /* Aumentar el espacio interior */
+    border: 2px solid #007bff; /* Cambiar el grosor y el color del borde */
+    border-radius: 6px; /* Redondear más los bordes */
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
+    outline: none; /* Eliminar el contorno al hacer clic */
+}
+
+.update-input::placeholder {
+    color: #999; /* Color de texto de marcador más suave */
+}
+
+.update-input:focus {
+    border-color: #0056b3; /* Cambiar el color del borde al enfocar */
+}
+
+.update-button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el ratón */
 }
 
 .update-avatar {
-    width: 100px;
-    height: 100px;
+    width: 120px; /* Aumentar el tamaño del avatar */
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Aumentar el espacio inferior */
     cursor: pointer;
+    object-fit: cover; /* Ajustar la imagen al tamaño del contenedor */
 }
 
 .image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px; /* Agregar espacio entre las imágenes */
 }
 
 .modal-content {
-    width: 80%;
+    width: 90%; /* Ajustar el ancho del modal */
     max-width: 600px;
     margin: 0 auto;
+    padding: 20px; /* Aumentar el espacio interior */
+    background-color: #fff; /* Color de fondo del modal */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
